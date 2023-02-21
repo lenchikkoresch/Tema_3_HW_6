@@ -28,7 +28,6 @@ double b1 = GetRatio("Введите коэффициент b1");
 double k2 = GetRatio("Введите коэффициент k2");
 double b2 = GetRatio("Введите коэффициент b2");
 
-
 if ((k1 == k2) && (b1 == b2))
 {
     Console.WriteLine($"Прямые y = {k1} * x + {b1}, y = {k2} * x + {b2} совпадают");
@@ -44,6 +43,5 @@ if ((k1 != k2) && (b1 != b2))
 { 
     double x0 = ((b2 - b1)/(k1 - k2));
     double y0 = k1 * ((b2 - b1) / (k1 - k2)) + b1;
-    Console.WriteLine($"Прямые y = {k1} * x + {b1}, y = {k2} * x + {b2} пересекаются в точке ({x0:f2};{y0:f2})");
+    Console.WriteLine($"Прямые y = {k1} * x + {b1}, y = {k2} * x + {b2} пересекаются в точке ({x0:f2}; {y0:f2})");
 }
-
